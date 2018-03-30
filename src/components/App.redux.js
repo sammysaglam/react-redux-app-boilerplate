@@ -1,8 +1,8 @@
 const ACTIONS = {
-	INCREMENT:'App/INCREMENT'
+	INCREMENT: 'App/INCREMENT',
 };
 
-export const reducer = (state = 0 , action) => {
+export const reducer = (state = 0, action) => {
 	switch (action.type) {
 		case ACTIONS.INCREMENT:
 			return state + 1;
@@ -13,7 +13,7 @@ export const reducer = (state = 0 , action) => {
 };
 
 export const actionCreators = {
-	increment:() => ({
-		type:ACTIONS.INCREMENT
-	})
+	increment: () => ({
+		type: ACTIONS.INCREMENT,
+	}),
 };
